@@ -1,0 +1,25 @@
+/* noflake */
+body {
+    font-family: 'Crimson Text', serif;
+    background-image:url(../img/diamond_upholstery.png);
+    background-repeat: repeat;
+}
+.container {
+}
+.header {
+    margin-top: 10px;
+    text-align: center;
+}
+.header h1 {
+    font-size: 4.0em;
+}
+.main {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height:1.1em;
+    font-size: 1.5em;
+}
+.thelist li {
+    font-weight:bold;
+}
