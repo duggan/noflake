@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+*{margin:0;padding:0;}
+body {
+    font:13.34px helvetica,arial,freesans,clean,sans-serif;
+    color:black;
+    line-height:1.4em;
+    background-color: #F8F8F8;
+    padding: 0.7em;
+}
+p {
+    margin:1em 0;
+    line-height:1.5em;
+}
+table {
+    font-size:inherit;
+    font:100%;
+    margin:1em;
+}
+table th{border-bottom:1px solid #bbb;padding:.2em 1em;}
+table td{border-bottom:1px solid #ddd;padding:.2em 1em;}
+input[type=text],input[type=password],input[type=image],textarea{font:99% helvetica,arial,freesans,sans-serif;}
+select,option{padding:0 .25em;}
+optgroup{margin-top:.5em;}
+pre,code{font:12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;}
+pre {
+    margin:1em 0;
+    font-size:12px;
+    background-color:#eee;
+    border:1px solid #ddd;
+    padding:5px;
+    line-height:1.5em;
+    color:#444;
+    overflow:auto;
+    -webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;border-radius:3px;
+}
+pre code {
+    padding:0;
+    font-size:12px;
+    background-color:#eee;
+    border:none;
+}
+code {
+    font-size:12px;
+    background-color:#f8f8ff;
+    color:#444;
+    padding:0 .2em;
+    border:1px solid #dedede;
+}
+img{border:0;max-width:100%;}
+abbr{border-bottom:none;}
+a{color:#4183c4;text-decoration:none;}
+a:hover{text-decoration:underline;}
+a code,a:link code,a:visited code{color:#4183c4;}
+h2,h3{margin:1em 0;}
+h1,h2,h3,h4,h5,h6{border:0;}
+h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
+h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
+h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
+h3{margin-top:1em;}
+hr{border:1px solid #ddd;}
+ul{margin:1em 0 1em 2em;}
+ol{margin:1em 0 1em 2em;}
+ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
+ul ul,ul ol,ol ol,ol ul{margin-top:0;margin-bottom:0;}
+blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+dt{font-weight:bold;margin-left:1em;}
+dd{margin-left:2em;margin-bottom:1em;}
+@media screen and (min-width: 768px) {
+    body {
+        width: 748px;
+        margin:10px auto;
+    }
+}
+</style>
+<title>The Noflake Manifesto</title>
+</head>
+<body>
+<h1>The Noflake Manifesto</h1>
+
+<p>The <a href="http://martinfowler.com/bliki/SnowflakeServer.html">Snowflake Server</a> is a system which is difficult to reproduce due to the unique and undocumented methods by which it came to its current state. Developers and systems administrators grow to fear altering these servers in case they cause damage.</p>
+
+<p>The Noflake Manifesto proposes that we have reached a point where there is no longer any excuse for such servers to exist.</p>
+
+<p>All servers should:</p>
+
+<ul>
+<li>Have their hardware specifications known and documented.</li>
+<li>Have their build process automated.</li>
+<li>Have their configuration managed and version controlled.</li>
+<li>Be regularly tested for consistency with documented expectations.</li>
+</ul>
+
+
+<p><a href="https://docs.google.com">Google Docs</a> and <a href="https://github.com/blog/699-making-github-more-open-git-backed-wikis">Github wikis</a>, amongst others, allow for collaborative, secure, version controlled document editing.</p>
+
+<p>Build systems do not have to be complicated. Something as simple as a collection of shellscripts, when version controlled and documented, are the seeds of a replicable system.</p>
+
+<p>Open source configuration management and deployment software, including <a href="http://wiki.opscode.com/display/chef/Home">Chef</a>, <a href="http://puppetlabs.com/puppet/puppet-open-source/">Puppet</a> and <a href="https://github.com/cloudfoundry/oss-docs/blob/master/bosh/documentation/documentation.md">BOSH</a> are well tested, documented and deployed across thousands of production environments.</p>
+
+<p>Companies making use of cloud computing services such as Amazon EC2 can afford to regularly and automatically build new machines to replace existing ones, ensuring no uncontrolled state becomes a dependency.</p>
+
+<p>Don&rsquo;t build snowflakes.</p>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3029758-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+
