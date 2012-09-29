@@ -78,3 +78,15 @@ body {
     line-height: 2.0em;
     border-bottom: 1px dashed #333;
 }
+.github-banner {
+    text-indent:-10000px;
+    display:block;
+    background-image: url('../img/forkme_right_red_aa0000.png');
+    background-repeat:no-repeat;
+    width: 149px;
+    height: 149px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+}
