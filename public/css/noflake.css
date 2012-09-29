@@ -1,10 +1,18 @@
 /* noflake */
+html {
+    height: 100%;
+}
 body {
+    height: 100%;
     font-family: 'Crimson Text', serif;
     background-image:url(../img/diamond_upholstery.png);
     background-repeat: repeat;
 }
-.container {
+.wrapper {
+    min-height: 100%;
+    height: auto !important; /* ie7 fix */
+    height: 100%;
+    margin: 0 auto -125px;
 }
 .header {
     margin-top: 10px;
@@ -15,6 +23,7 @@ body {
 }
 .main {
     width: 600px;
+    height: 800px;
     margin-left: auto;
     margin-right: auto;
     line-height:1.1em;
@@ -22,4 +31,50 @@ body {
 }
 .thelist li {
     font-weight:bold;
+}
+.footer {
+    padding: 20px;
+    background-color: #333;
+    color: #eee;
+    background-image:url(../img/dark_wall.png);
+    background-repeat: repeat;
+    height: 250px;
+    border-top: 10px solid #333;
+}
+.footer h2 {
+    font-family: 'Tangerine', serif;
+    font-size: 3.0em;
+    padding-bottom: 6px;
+    margin-bottom:0px;
+    border-bottom: 2px solid #333;
+    text-align: center;
+}
+.footer .block {
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Crimson Text', serif;
+    font-size:1.2em;
+}
+.footer .block ul {
+    text-align: center;
+    color: #999;
+    margin: 0;
+    list-style-type: none;
+}
+.footer .block ul li {
+    padding-left: 10px;
+}
+.footer .block ul li:before {
+    content: "~ ";
+}
+.footer .block ul li:after {
+    content: " ~";
+}
+.footer .block ul a {
+    color: #999;
+}
+.footer .block ul li {
+    line-height: 2.0em;
+    border-bottom: 1px dashed #333;
 }
