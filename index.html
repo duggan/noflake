@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The Noflake Manifesto</title>
+        <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/noflake.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="row header">
+                    <h1>The Noflake Manifesto</h1>
+                </div>
+
+                <div class="row main">
+                    <p>The <a href="http://martinfowler.com/bliki/SnowflakeServer.html">Snowflake Server</a> is a system which is difficult to reproduce due to the unique and undocumented methods by which it came to its current state. Developers and systems administrators grow to fear altering these servers in case they cause damage.</p>
+
+                    <p>The Noflake Manifesto proposes that we have reached a point where there is no longer any excuse for such servers to exist.</p>
+
+                    <div class="thelist">
+                        <p>All servers should:</p>
+                        <p>
+                            <ul>
+                                <li>Have their hardware specifications known and documented.</li>
+                                <li>Have their build process automated.</li>
+                                <li>Have their configuration managed and version controlled.</li>
+                                <li>Be regularly tested for consistency with documented expectations.</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <p><a href="https://docs.google.com">Google Docs</a> and <a href="https://github.com/blog/699-making-github-more-open-git-backed-wikis">Github wikis</a>, amongst others, allow for collaborative, secure, version controlled document editing.</p>
+
+                    <p>Build systems do not have to be complicated. Something as simple as a collection of shellscripts, when version controlled and documented, are the seeds of a replicable system.</p>
+
+                    <p>Open source configuration management and deployment software, including <a href="http://wiki.opscode.com/display/chef/Home">Chef</a>, <a href="http://puppetlabs.com/puppet/puppet-open-source/">Puppet</a>, <a href="http://ansibleworks.com/docs/gettingstarted.html">Ansible</a>, <a href="http://docs.saltstack.com/">Salt</a>, and <a href="http://docs.cloudfoundry.com/docs/running/bosh/">BOSH</a> are well tested, documented and deployed across thousands of production environments.</p>
+
+                    <p>Companies making use of cloud computing services such as Amazon EC2 can afford to regularly and automatically build new machines to replace existing ones, ensuring no uncontrolled state becomes a dependency.</p>
+
+                    <p>Don&rsquo;t build snowflakes. &#10052;</p>
+                </div>
+            </div>
+            <a class="github-banner" href="https://github.com/duggan/noflake">Fork me on Github!</a>
+        </div>
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span4">
+                        <div class="block">
+                            <h2>Other Resources</h2>
+                            <ul>
+                                <li><a href="https://travis-ci.org/">Travis CI</a></li>
+                                <li><a href="http://cfengine.com/">CFEngine</a></li>
+                                <li><a href="https://github.com/SimpleFinance/ec2audit">EC2 Audit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="block">
+                            <h2>Credits</h2>
+                            <ul>
+                                <li><a title="For the basic layout" href="http://twitter.github.com/bootstrap/">Bootstrap</a></li>
+                                <li><a title="For the background images" href="http://subtlepatterns.com/">SubtlePatterns</a></li>
+                                <li><a title="For the fonts used" href="http://www.google.com/webfonts/">Web Fonts</a></li>
+                                <li><a href="http://rossduggan.ie/blog/infrastructure/the-noflake-manifesto/">Original Article</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="block">
+                            <h2>See Also</h2>
+                            <ul>
+                                <li><a href="http://www.floopsy.com/post/32453280184/w-t-f-m-write-the-freaking-manual">WTFM: Write the Freakin' Manual</a></li>
+                                <li><a href="http://kief.com/automated-server-management-lifecycle.html">Automated Server Management Lifecycle</a></li>
+                                <li><a href="http://highscalability.com/log-everything-all-time">Log Everything All The Time</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-3029758-6']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+    </body>
+</html>
+
